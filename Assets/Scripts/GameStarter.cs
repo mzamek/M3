@@ -8,6 +8,7 @@ public class GameStarter : MonoBehaviour
     [SerializeField] private string startLevel = "demo";
     public void NewGameButton()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(startLevel);
     }
 

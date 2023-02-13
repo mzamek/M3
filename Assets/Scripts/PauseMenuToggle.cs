@@ -17,6 +17,7 @@ public class PauseMenuToggle : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
+            Time.timeScale = 0f;
             if (canvasGroup.interactable)
             {
                 canvasGroup.interactable = false; 
